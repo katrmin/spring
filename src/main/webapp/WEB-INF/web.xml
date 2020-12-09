@@ -22,7 +22,7 @@
 </servlet-mapping>
 <servlet-mapping>
     <servlet-name>FirstServlet</servlet-name>
-    <url-pattern>/first_servlet</url-pattern>
+    <url-pattern>/first_servlet/*</url-pattern>
 </servlet-mapping>
 
 </web-app>

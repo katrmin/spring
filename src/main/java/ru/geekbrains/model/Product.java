@@ -1,47 +1,46 @@
 package ru.geekbrains.model;
 
 public class Product {
-    Long Id;
-    String name;
-    String description;
+    Long id;
+    String title;
+    String cast;
 
-    public Product(Long id, String name, String description) {
-        Id = id;
-        this.name = name;
-        this.description = description;
+    public Product(Long id, String title, String cast) {
+        this.id = id;
+        this.title = title;
+        this.cast = cast;
     }
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getCast() {
+        return cast;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setCast(String cast) {
+        this.cast = cast;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "Id=" + Id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                '}' +
-                "";
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", cast='" + cast + '\'' +
+                "}\\n";
     }
 }
